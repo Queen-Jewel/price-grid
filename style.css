@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --lightcyan: rgba(74,190,189,255);
+}
+
+/*Body*/
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 650px;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px lightgray;
+}
+
+/*BOX 1*/
+.box1 {
+    padding: 30px;
+    padding-right: 130px;
+}
+h4.B1 {
+    color: var(--Cyan);
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+h5.B1a {
+    color: var(--BrightYellow);
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+p.B1b {
+    color: var(--GrayishBlue);
+    font-size: 14px;
+    word-spacing: 2;
+}
+
+.below {
+    display: flex;
+}
+
+/*BOX 2*/
+.box2{
+    background-color: var(--Cyan);
+    color: #fff;
+    padding: 20px 65px;
+    padding-left: 30px;
+}
+h5.B2 {
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.price,h2 {
+    padding-right: 10px;
+    color: #fff;
+}
+.price,.P1 {
+    padding-bottom: 5px;
+    color: lightblue;
+    padding-right: 10px;
+}
+p.B2a {
+    padding-bottom: 20px;
+    
+}
+button {
+    color: #fff;
+    background-color: var(--BrightYellow);
+    padding: 15px 95px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+}
+/*BOX 3*/
+.box3 {
+    background: var(--lightcyan);
+    padding: 20px 65px;
+    color: #fff;
+    padding-right: 127px;
+    padding-left:35px ;
+}
+.B3 {
+    padding: 10px 0;
+    font-size: 18px;
+}
+li {
+    list-style: none;
+    font-size: 12px;
+    color: lightblue;
+}
+
+@media screen  and (max-width:700px){
+    body{
+        display: block;
+        height: 103vh;
+        width: 300px;
+        margin: 50px auto;
+    }
+
+    .box1 {
+        padding: 20px 25px;
+    }
+    p.B1b {
+        font-size: 13px;
+        line-height: 2;
+        
+    }
+    .box2 {
+        padding: 10px 25px;
+    }
+    h5.B2 {
+        font-size: 16px;
+    }
+    p.B2a {
+        font-size: 14px;
+    }
+    button {
+        padding: 10px 94px;
+    }
+    .below {
+        display: block;
+    }
+    .box3 {
+        padding:10px 25px ;
+    }
+}
